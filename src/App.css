@@ -1,0 +1,41 @@
+*{
+    margin: 0 auto;
+    margin-top: 0px;
+    text-align: center;
+}
+
+span {
+  margin-top: 30px;
+  border-radius: 3px solid black;
+}
+     
+input, table{
+    margin-top: 30px;
+}
+
+#column, #people{
+    width: 50px;
+}
+
+table,
+td {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+td{
+    padding: 7px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+tr {
+    display: flex;
+}
