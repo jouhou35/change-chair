@@ -1,6 +1,6 @@
 import "./App.css";
 
-var sleeptime = 500;
+var sleeptime = 1000;
 
 function App() {
 
