@@ -5,18 +5,18 @@ var sleeptime = 500;
 function App() {
 
     const reset = () => {
-      console.log('reset');
-      document.getElementById('btn').disabled = false;
-      var tableElem = document.getElementById('sample-table');
-      for(let i = 0; i < 100; i++){
+        console.log('reset');
+        document.getElementById('btn').disabled = false;
+        var tableElem = document.getElementById('sample-table');
+        for(let i = 0; i < 100; i++){
         tableElem.tBodies[0].deleteRow(0);
-      }
+    }
         // window.location.reload();
     }
     
     const change = () => {
-      console.log('change');
-      document.getElementById('btn').disabled = true;
+        console.log('change');
+    document.getElementById('btn').disabled = true;
 
 
         const sleep = waitTime => new Promise( resolve => setTimeout(resolve, waitTime) );
@@ -69,21 +69,21 @@ function App() {
 
     return (
         <div>
-          <h2><span>席替え</span></h2>
-          人数<input type="number" id="people" ></input>
-          列<input type="number" id="column" ></input>
-          <button onClick={change} id="btn" disabled={false} >change</button>
-          <button onClick={reset} id="reset" >reset</button>
-          <table id="sample-table">
-          <thead>
-              <tr>
-                  <th colSpan="2">黒板</th>
-              </tr>
-          </thead>
-          <tbody>
-                  
-          </tbody>
-          </table>
+            <h2><span>席替え</span></h2>
+            人数<input type="number" id="people" ></input>
+            列<input type="number" id="column" ></input>
+            <button onClick={change} id="btn" disabled={false} >change</button>
+            <button onClick={reset} id="reset" >reset</button>
+            <table id="sample-table">
+            <thead>
+                <tr>
+                    <th colSpan="2">黒板</th>
+                </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+            </table>
         </div>
     );
 }
