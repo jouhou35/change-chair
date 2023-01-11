@@ -1,6 +1,7 @@
 import "./App.css";
 
-var sleeptime = 500;
+var sleeptime = 750;
+
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
     
     const change = () => {
         console.log('change');
-    document.getElementById('btn').disabled = true;
+        document.getElementById('btn').disabled = true;
 
 
         const sleep = waitTime => new Promise( resolve => setTimeout(resolve, waitTime) );
